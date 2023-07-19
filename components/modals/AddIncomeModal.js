@@ -95,13 +95,13 @@ function AddIncomeModal({ show, onClose }) {
               </div>
               <p className="flex items-center gap-2">
                 {currencyFormatter(i.amount)}
-                <button
+                {/* <button
                   onClick={() => {
                     deleteIncomeEntryHandler(i.id);
                   }}
                 >
                   <FaRegTrashAlt />
-                </button>
+                </button> */}
               </p>
             </div>
           );
