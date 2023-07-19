@@ -34,7 +34,7 @@ function AddIncomeModal({ show, onClose }) {
       await addIncomeItem(newIncome);
       descriptionRef.current.value = "";
       amountRef.current.value = "";
-      toast.success("Income added successfully!");
+      toast.success("Diposited successfully!");
     } catch (error) {
       console.log(error.message);
       toast.error(error.message);
@@ -62,7 +62,7 @@ function AddIncomeModal({ show, onClose }) {
             ref={amountRef}
             min={0.01}
             step={0.01}
-            placeholder="Diposit income amount"
+            placeholder="Diposit amount"
             required
           />
         </div>
